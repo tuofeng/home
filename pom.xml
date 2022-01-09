@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.orgin</groupId>
+	<artifactId>home</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<modules>
+		<module>xmg</module>
+		<module>yxl</module>
+        <module>common</module>
+    </modules>
+	<name>home</name>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.apache.dubbo</groupId>
+			<artifactId>dubbo-spring-boot-starter</artifactId>
+			<version>2.7.3</version>
+		</dependency>
+
+	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus-release</id>
+			<name>nexus release</name>
+			<url>http://124.71.79.139:8081/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus-snapshot</id>
+			<name>nexus snapshot</name>
+			<url>http://124.71.79.139:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+</project>
