@@ -11,7 +11,7 @@ public class XmgMain {
     }
 
     public static String getName(){
-        return "xmglys";
+        return "xmglys233";
     }
 
 }
